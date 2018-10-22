@@ -34,5 +34,5 @@ JSON的逗號要記得加不然重新啟動 Docker Service 會啟動不起來
 ``systemctl restart docker``
 再一次使用一般使用者(user1)執行 docker images 指令，確認是否解決了問題
  
-之後我所介紹使用的 docker 版本如果沒有特別說明，都是使用 1.12.6。今天已經把docker 安裝完成了，明天就可以開始把 docker image pull 下來使用。
+之後我所介紹使用的 docker 版本如果沒有特別說明，都是使用 1.12.6。今天已經把docker 安裝完成了，明天就可以開始把 docker image pull 下來使用
 
