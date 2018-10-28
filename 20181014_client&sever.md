@@ -16,10 +16,11 @@
 
 :::info
 安裝時出現：
+```shell
 There are no enabled repos.
 Run "yum repolist all" to see the the repos you have.
 You can enable repos with yum-conffig-manager --enabe ,reppo.)
-:::
+```
 如果出現以上字句，請改yum為apt-get;
 
 :::info
