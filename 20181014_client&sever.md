@@ -11,8 +11,12 @@
 
 安裝doctor
 1.	Docker 使用的作業系統是 CentOS 7.3， Kernel 使用預設的 3.10.0-514
-2.	首先需要先安裝yum套件``apt-get install yum``
+2.	首先需要先安裝yum套件``apt-get install yum``(root的情況下``sudo su``)
 3.	在root下執行``yum install -y docker``來安裝doctor
+(安裝時出現：
+There are no enabled repos.
+Run "yum repolist all" to see the the repos you have.
+You can enable repos with yum-conffig-manager --enabe ,reppo.)
 4.	systemctl start docker來執行doctor
 5.	docker version看版本
 6.	如果要安裝最新的yum install https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-17.05.0.ce-1.el7.centos.x86_64.rpm
