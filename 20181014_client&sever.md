@@ -23,16 +23,14 @@ You can enable repos with yum-conffig-manager --enabe ,reppo.)
 :::
 原因：
 一般来说著名的linux系统基本上分两大类：
-1 RedHat系列：Redhat、Centos、Fedora等
-2 Debian系列：Debian、Ubuntu等
-RedHat 系列：
---常见的安装包格式 rpm 包，安装rpm包的命令是 “rpm -参数”
---包管理工具 yum
---支持tar包
-Debian系列
---常见的安装包格式 deb 包，安装deb包的命令是 “dpkg -参数”
---包管理工具 apt-get
---支持tar包
+- RedHat 系列：Redhat、Centos、Fedora等
+  - 常见的安装包格式 rpm 包，安装rpm包的命令是 “rpm -参数”
+  - 包管理工具 yum
+  - 支持tar包
+- Debian系列:Debian、Ubuntu等
+  - 常见的安装包格式 deb 包，安装deb包的命令是 “dpkg -参数”
+  - 包管理工具 apt-get
+  - 支持tar包
 :::
 4.	systemctl start docker來執行doctor
 5.	docker version看版本
