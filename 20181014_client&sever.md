@@ -36,10 +36,24 @@ You can enable repos with yum-conffig-manager --enabe ,reppo.)
   - 支持tar包
   :::
 4.	systemctl start docker來執行doctor
-5.	docker version看版本
-6.	如果要安裝最新的yum install https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-17.05.0.ce-1.el7.centos.x86_64.rpm
-7.	systemctl enable docker可以讓下次開機自動執行
-8.	使用 root 使用者權限時可以順利的執行 ``docker images``,如果有問題請使用以下方法處理
+```
+failed to start docker service: Unit docker.service not found.
+```
+5.	因此嘗試了另外一種安裝辦法(針對Ubuntu)
+```
+sudo apt-get install docker.io
+```
+6.  檢查docker是否啟動
+```
+service docker status
+```
+7.  檢查是否有有連線到Docker daemon
+```
+docker version
+```
+如果沒有出現client和sever
+6.	systemctl enable dockerDocker daemon可以讓下次開機自動執行
+7.	使用 root 使用者權限時可以順利的執行 ``docker images``,如果有問題請使用以下方法處理
 修改 ``/etc/docker/daemon.json`` 的檔案，如果沒有此檔案直接建立新的檔案，指令如下：
 ``Vi /etc/docker/daemon.json``
 檔案內容如下：
