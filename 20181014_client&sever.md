@@ -13,14 +13,16 @@
 1.	Docker 使用的作業系統是 CentOS 7.3， Kernel 使用預設的 3.10.0-514
 2.	首先需要先安裝yum套件``apt-get install yum``(root的情況下``sudo su``)
 3.	在root下執行``yum install -y docker``來安裝doctor
-:::
+
+:::info
 安裝時出現：
 There are no enabled repos.
 Run "yum repolist all" to see the the repos you have.
 You can enable repos with yum-conffig-manager --enabe ,reppo.)
 :::
-如果出現以上字句，請改yum為apt-get
-:::
+如果出現以上字句，請改yum為apt-get;
+
+:::info
 原因：
 一般来说著名的linux系统基本上分两大类：
 - RedHat 系列：Redhat、Centos、Fedora等
@@ -31,7 +33,7 @@ You can enable repos with yum-conffig-manager --enabe ,reppo.)
   - 常见的安装包格式 deb 包，安装deb包的命令是 “dpkg -参数”
   - 包管理工具 apt-get
   - 支持tar包
-:::
+  :::
 4.	systemctl start docker來執行doctor
 5.	docker version看版本
 6.	如果要安裝最新的yum install https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-17.05.0.ce-1.el7.centos.x86_64.rpm
