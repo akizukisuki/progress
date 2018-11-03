@@ -33,7 +33,7 @@
 
 ``` 
  
- 
+ ```shell
  #
 # NTP configuration file (ntp.conf)
 #
@@ -47,7 +47,7 @@ server time.stdtime.gov.tw prefer
 server clock.stdtime.gov.tw
 server watch.stdtime.gov.tw
 
-#
+
 # Server From NIST and USNO。這是NIST（美國國家標準局）及USNO
 # （美國海軍天文台）的Server。由於server設在美國，網路延遲並不固定
 # 一般設定上述Server已足夠。
@@ -80,7 +80,23 @@ filegen clockstats file clockstats type day enable
 #controlkey 15 # key (6) for accessing server variables
 #authdelay 0.001501 # authentication delay (VAX)
 #authdelay 0.000073 # authentication delay (SPARC)
- 
+ ```
+ ```shell
+      remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ 0.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.000
+ 1.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.000
+ 2.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.000
+ 3.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.000
++ntp.univ-angers 145.238.203.14   2 u   64  256  373  303.571   96.521  30.228
+*212.51.144.44   .PPS.            1 u  148  256  377  310.632  105.637  60.069
++103.18.128.60   216.239.35.12    2 u   80  256  377   11.724   98.090  63.526
++nettuno.ntp.irh 193.204.114.233  2 u   93  256  373  303.751   96.011 109.951
++81.2.248.189 (h 195.113.144.238  2 u   61  256  377  310.422   98.813  56.590
++server.spnr.de  192.53.103.108   2 u  131  256  277  287.366  110.257  18.139
++ns3.stoneartpro 193.52.184.106   2 u   64  256  377  289.414  104.630  43.014
+
+ ```
  
  
  
