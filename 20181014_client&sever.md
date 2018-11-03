@@ -1,4 +1,5 @@
 # 一.建立 Node.js NTP Client 端
+1.
 # 二.Docker
 為何使用doctor
 1.	為因應不同的系統，且同時可以在不同系統運行及嘗試
@@ -35,7 +36,7 @@ You can enable repos with yum-conffig-manager --enabe ,reppo.)
   - 包管理工具 apt-get
   - 支持tar包
   :::
-4.	systemctl start docker來執行doctor
+4.	`systemctl start docker`或`service docker start` 來執行doctor
 ```
 failed to start docker service: Unit docker.service not found.
 ```
@@ -52,13 +53,13 @@ service docker status
 docker version
 ```
 如果沒有出現client和sever
+8.	systemctl enable docker可以讓下次開機自動執行
+9.	使用 root 使用者權限時可以順利的執行 ``docker images``,但一般使用者卻無法的時候
 
-6.	systemctl enable dockerDocker daemon可以讓下次開機自動執行
-7.	使用 root 使用者權限時可以順利的執行 ``docker images``,如果有問題請使用以下方法處理修改 ``/etc/docker/daemon.json`` 的檔案，如果沒有此檔案直接建立新的檔案，指令如下：
+如果有問題請使用以下方法處理修改 ``/etc/docker/daemon.json`` 的檔案，如果沒有此檔案直接建立新的檔案，指令如下：
 
 ``Vi /etc/docker/daemon.json``
-
-檔案內容如下：
+檔案內容如下：(修改此檔案需要root，否則會權限不足)
 
 ``
 {
@@ -71,6 +72,7 @@ JSON的逗號要記得加不然重新啟動 Docker Service 會啟動不起來
 使用 root 權限把 user1 指令加入到 dockerroot 的 group，指令如下
 
 `` usermod -aG dockerroot user1``
+然而結果為dockerroot不存在...
 
 重新啟動 docker service，指令如下
 
