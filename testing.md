@@ -1,3 +1,4 @@
+ ```shell
  server tick.stdtime.gov.tw            //設定 Time Server
  server tock.stdtime.gov.tw
  server clock.stdtime.gov.tw
@@ -14,8 +15,23 @@
  trustedkey 1 2
  requestkey 2
  controlkey 2
- 
- 
+ ```
+ ```shell
+ \     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ 0.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.000
+ 1.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.000
+ 2.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.000
+ 3.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.000
++ntp.univ-angers 145.238.203.14   2 u  246  256  375  303.571   96.521  30.219
+*ntp.maillink.ch .PPS.            1 u   54  256  377  310.632  105.637  60.069
++103-18-128-60.i 216.239.35.12    2 u  235  256  377   16.291   93.959  60.820
++nettuno.ntp.irh 193.204.114.232  2 u  249  256  375  303.751   96.011 109.958
++81.2.248.189 (h 195.113.144.238  2 u  204  256  377  310.422   98.813  56.245
++server.spnr.de  192.53.103.108   2 u   17  256  277  287.366  110.257  18.139
++ns3.stoneartpro 193.52.184.106   2 u  209  256  377  289.414  104.630  42.912
+
+``` 
  
  
  #
