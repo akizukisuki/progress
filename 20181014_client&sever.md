@@ -52,9 +52,13 @@ service docker status
 docker version
 ```
 如果沒有出現client和sever
+
 6.	systemctl enable dockerDocker daemon可以讓下次開機自動執行
 7.	使用 root 使用者權限時可以順利的執行 ``docker images``,如果有問題請使用以下方法處理
-修改 ``/etc/docker/daemon.json`` 的檔案，如果沒有此檔案直接建立新的檔案，指令如下：
+
+修改 ``/etc/docker/daemon.json`` 的檔案，
+
+如果沒有此檔案直接建立新的檔案，指令如下：
 ``Vi /etc/docker/daemon.json``
 檔案內容如下：
 ``
