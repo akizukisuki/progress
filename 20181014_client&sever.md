@@ -82,3 +82,4 @@ JSON的逗號要記得加不然重新啟動 Docker Service 會啟動不起來
  
 之後我所介紹使用的 docker 版本如果沒有特別說明，都是使用 1.12.6。今天已經把docker 安裝完成了，明天就可以開始把 docker image pull 下來使用
 
+抑或是可以執行`chmod 777 /var/run/docker.sock`來把權限開到最大，但是每次重啟docker都要重新設定
