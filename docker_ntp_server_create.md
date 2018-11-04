@@ -64,4 +64,7 @@ fixed 0 of 1 vulnerability in 3389 scanned packages
   1 vulnerability required manual review and could not be updated
 
 ```
-由於上述可發現會有warning的產生，因此參考http://cjworld1208.pixnet.net/blog/post/9567741-grub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E的安裝模式，然而資源取的方法
+由於上述可發現會有warning的產生，因此參考http://cjworld1208.pixnet.net/blog/post/9567741-grub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E
+的安裝模式，然而資源取的方法
+```wget ftp://ftp.gnu.org/gnu/grub/grub-2.02.tar.xz```
+```wget ftp://ftp.gnu.org/gnu/grub/grub-2.02.tar.xz.sig```
