@@ -68,3 +68,21 @@ fixed 0 of 1 vulnerability in 3389 scanned packages
 的安裝模式，然而資源取的方法
 ```wget ftp://ftp.gnu.org/gnu/grub/grub-2.02.tar.xz```
 ```wget ftp://ftp.gnu.org/gnu/grub/grub-2.02.tar.xz.sig```
+after entering the grub file
+```shell
+pi@raspberrypi:/usr/local/src/grub-2.02 $ ./configure
+checking build system type... armv7l-unknown-linux-gnueabihf
+checking host system type... armv7l-unknown-linux-gnueabihf
+checking target system type... armv7l-unknown-linux-gnueabihf
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for cmp... cmp
+checking for bison... no
+configure: error: bison is not found
+```
+error: bison is not found
