@@ -24,3 +24,11 @@ WARNING: Your kernel does not support memory swappiness capabilities, memory swa
 7519c167f62081fd72e9f13d213ff7db1af26a835dfd7807780b9b82557a004b
 Error response from daemon: Cannot start container 7519c167f62081fd72e9f13d213ff7db1af26a835dfd7807780b9b82557a004b: Error starting userland proxy: listen udp 0.0.0.0:123: bind: address already in use
 ```
+用了以下辦法處理swap memory 的問題
+```shell
+TL;DR: add cgroup_enable=memory swapaccount=1 to kernel boot options to enable both swap and memory accounting
+/etc/default/grub:
+
+GRUB_CMDLINE_LINUX_DEFAULT="cgroup_enable=memory swapaccount=1"
+then sudo grub-update && sudo reboot
+```
