@@ -601,3 +601,6 @@ checking whether m4 supports frozen files... no
 configure: error: GNU M4 1.4 is required
 
 ```
+因為error: GNU M4 1.4 is required
+因此需要安裝GMU M4
+參考：http://www.gnu.org/software/m4/m4.html
