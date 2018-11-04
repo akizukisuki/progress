@@ -1,0 +1,11 @@
+root@raspberrypi:/home/pi/docker-ntp# docker pull cturra/ntp
+Using default tag: latest
+latest: Pulling from cturra/ntp
+fb5dbe6f601f: Pull complete 
+3e3f42a98e9e: Pull complete 
+b9b11971468b: Pull complete 
+b0a0ba8c5b3b: Pull complete 
+98499cef5a73: Pull complete 
+9e8a9c65b732: Pull complete 
+Digest: sha256:f7fc025d729090fb9c8a6b2c9e6c04f3dda6543699c56dfa663827f0f2542409
+Status: Downloaded newer image for cturra/ntp:latest
