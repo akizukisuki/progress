@@ -32,7 +32,7 @@ TL;DR: add cgroup_enable=memory swapaccount=1 to kernel boot options to enable b
 GRUB_CMDLINE_LINUX_DEFAULT="cgroup_enable=memory swapaccount=1"
 then sudo grub-update && sudo reboot
 ```
-發現grub並不存在，因此在此安裝  參考： https://unix.stackexchange.com/questions/183053/grub-install-command-not-found
+發現grub並不存在，因此在此安裝  參考： http://cjworld1208.pixnet.net/blog/post/9567741-grub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E
 ```shell
 
 ```
