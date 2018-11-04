@@ -32,7 +32,35 @@ TL;DR: add cgroup_enable=memory swapaccount=1 to kernel boot options to enable b
 GRUB_CMDLINE_LINUX_DEFAULT="cgroup_enable=memory swapaccount=1"
 then sudo grub-update && sudo reboot
 ```
-發現grub並不存在，因此在此安裝  參考： http://cjworld1208.pixnet.net/blog/post/9567741-grub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E
+發現grub並不存在，因此在此安裝  參考： https://www.gnu.org/software/grub/grub-download.html
 ```shell
+pi@raspberrypi:~ $ git clone git://git.savannah.gnu.org/grub.git
+Cloning into 'grub'...
+remote: Counting objects: 92806, done.
+remote: Compressing objects: 100% (21328/21328), done.
+remote: Total 92806 (delta 69176), reused 92806 (delta 69176)
+Receiving objects: 100% (92806/92806), 69.78 MiB | 349.00 KiB/s, done.
+Resolving deltas: 100% (69176/69176), done.
+
+pi@raspberrypi:~/grub $ npm install
+npm WARN @google-cloud/logging-winston@0.9.0 requires a peer of winston@^2.x but none is installed. You must install peer dependencies yourself.
+npm WARN pi@1.0.0 No description
+npm WARN pi@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: xpc-connection@0.1.4 (node_modules/xpc-connection):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for xpc-connection@0.1.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"arm"})
+
+audited 3389 packages in 20.446s
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+pi@raspberrypi:~/grub $ npm audit fix
+npm WARN @google-cloud/logging-winston@0.9.0 requires a peer of winston@^2.x but none is installed. You must install peer dependencies yourself.
+npm WARN pi@1.0.0 No description
+npm WARN pi@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: xpc-connection@0.1.4 (node_modules/xpc-connection):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for xpc-connection@0.1.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"arm"})
+
+up to date in 15.264s
+fixed 0 of 1 vulnerability in 3389 scanned packages
+  1 vulnerability required manual review and could not be updated
 
 ```
