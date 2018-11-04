@@ -86,3 +86,5 @@ checking for bison... no
 configure: error: bison is not found
 ```
 error: bison is not found
+解決辦法：
+參考：https://geeksww.com/tutorials/miscellaneous/bison_gnu_parser_generator/installation/installing_bison_gnu_parser_generator_ubuntu_linux.php
