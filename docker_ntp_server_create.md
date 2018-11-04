@@ -1,4 +1,5 @@
-https://github.com/cturra/docker-ntp
+參考：https://github.com/cturra/docker-ntp
+"NTP Server running in a Docker container"
 ```shell
 root@raspberrypi:/home/pi/docker-ntp# docker pull cturra/ntp
 Using default tag: latest
