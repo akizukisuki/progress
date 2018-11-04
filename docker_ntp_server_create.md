@@ -604,3 +604,16 @@ configure: error: GNU M4 1.4 is required
 因為error: GNU M4 1.4 is required
 因此需要安裝GMU M4
 參考：http://www.gnu.org/software/m4/m4.html
+```shell
+pi@raspberrypi:~ $ git clone git://git.sv.gnu.org/m4
+Cloning into 'm4'...
+remote: Counting objects: 18370, done.
+remote: Compressing objects: 100% (3213/3213), done.
+remote: Total 18370 (delta 14924), reused 18370 (delta 14924)
+Receiving objects: 100% (18370/18370), 7.01 MiB | 603.00 KiB/s, done.
+Resolving deltas: 100% (14924/14924), done.
+
+git checkout -b branch-1.4 origin/branch-1.4
+fatal: Not a git repository (or any of the parent directories): .git
+
+```
