@@ -10,3 +10,26 @@ ssh -i ntp_rsa mbwclnctu@35.221.137.129
 
 
 https://joshhu.gitbooks.io/docker_theory_install/content/DockerBible/ubuntuvm.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pi@raspberrypi:~ $ ssh -i /home/pi/ntp_rsa mbwclnctu@35.221.137.129
+ssh: connect to host 35.221.137.129 port 22: Connection timed out
+
+
+
+
+
+
+
