@@ -30,6 +30,15 @@ ssh: connect to host 35.221.137.129 port 22: Connection timed out
 
 
 
+pi@raspberrypi:~ $ ssh -i ntp_rsa mbwclnctu@35.221.137.129
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for 'ntp_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "ntp_rsa": bad permissions
+Permission denied (publickey).
 
 
 
