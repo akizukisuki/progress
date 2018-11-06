@@ -1,2 +1,0 @@
-pi@raspberrypi:~/docker-ntp $ docker ps
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
