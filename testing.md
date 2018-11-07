@@ -1,3 +1,4 @@
+ 關於ntp.conf檔中的資料
  ```shell
  server tick.stdtime.gov.tw            //設定 Time Server
  server tock.stdtime.gov.tw
@@ -16,6 +17,7 @@
  requestkey 2
  controlkey 2
  ```
+ 
  ```shell
  \     remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
