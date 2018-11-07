@@ -1,5 +1,13 @@
-參考：https://github.com/cturra/docker-ntp
-"NTP Server running in a Docker container"
+# 安裝NTP-SERVER in DOCKER
+1.首先安裝資源包
+ (以下安裝方法參考：https://github.com/cturra/docker-ntp)
+
+```shell
+ git clone https://github.com/akiicat/ecg-receiver
+cd ecg-receiver
+npm install
+```
+從docker pull相關images
 ```shell
 root@raspberrypi:/home/pi/docker-ntp# docker pull cturra/ntp
 Using default tag: latest
@@ -13,6 +21,8 @@ b0a0ba8c5b3b: Pull complete
 Digest: sha256:f7fc025d729090fb9c8a6b2c9e6c04f3dda6543699c56dfa663827f0f2542409
 Status: Downloaded newer image for cturra/ntp:latest
 ```
+
+在docker執行剛剛pull的東西
 ```shell
 root@raspberrypi:/home/pi/docker-ntp# docker run --name=ntp             \
 >               --restart=always       \
@@ -35,6 +45,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="cgroup_enable=memory swapaccount=1"
 then sudo grub-update && sudo reboot
 ```
 發現grub並不存在，因此在此安裝  參考： https://www.gnu.org/software/grub/grub-download.html
+(grub主要是用來讓同一台電腦可以處理多種系統，算是一種啟動器)
 ```shell
 pi@raspberrypi:~ $ git clone git://git.savannah.gnu.org/grub.git
 Cloning into 'grub'...
