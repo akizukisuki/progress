@@ -5,3 +5,15 @@ info:    Forever stopped process:
 
 https://blog.csdn.net/llzkkk12/article/details/78171750
 https://segmentfault.com/q/1010000008719439
+
+
+
+
+const exec = require('child_process').exec
+
+const build = exec('sudo ntpdate time.google.com')
+var sec=1000;
+setInterval(function()
+{
+	build.stdout.on('data', data => console.log('stdout: ', data))
+},sec);
